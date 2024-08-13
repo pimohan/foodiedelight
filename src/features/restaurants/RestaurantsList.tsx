@@ -20,25 +20,28 @@ const RestaurantsList = () => {
   const { restaurantService, reload, setReload, searchText } = useRestaurants();
 
   // Function to fetch data from the API
-  const fetchData = async (page: number, size: number) => {
-    setLoading(true);
-    try {
-      let response = null;
+  const fetchData = useCallback(
+    async (page: number, size: number) => {
+      setLoading(true);
+      try {
+        let response = null;
 
-      if (page === 1 && total === 0) {
-        response = await restaurantService?.getRestaurants(page);
-        setData(response?.data?.data);
-        setTotal(parseInt(response?.data?.items, 10));
-      } else {
-        response = await restaurantService?.getRestaurants(page, size);
-        setData(response?.data);
+        if (page === 1 && total === 0) {
+          response = await restaurantService?.getRestaurants(page);
+          setData(response?.data?.data);
+          setTotal(parseInt(response?.data?.items, 10));
+        } else {
+          response = await restaurantService?.getRestaurants(page, size);
+          setData(response?.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch data", error);
       }
-    } catch (error) {
-      console.error("Failed to fetch data", error);
-    }
-    setReload(false);
-    setLoading(false);
-  };
+      setReload(false);
+      setLoading(false);
+    },
+    [total, setReload, restaurantService] // Add dependencies here
+  );
 
   // Handle table pagination changes
   const handleTableChange = (pagination: any) => {
@@ -50,7 +53,7 @@ const RestaurantsList = () => {
   // Fetch data when current page or page size changes
   useEffect(() => {
     fetchData(currentPage, pageSize);
-  }, [currentPage, pageSize]);
+  }, [currentPage, pageSize, fetchData]);
 
   // Fetch data with a delay when search text changes
   useEffect(() => {

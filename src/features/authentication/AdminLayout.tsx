@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { useNavigate, Outlet } from "react-router-dom";
 import { ConfigProvider, Flex, Layout, Menu, Popconfirm, theme } from "antd";
 import {
@@ -21,19 +22,22 @@ export const AdminLayout = () => {
   } = theme.useToken();
 
   // Handle menu item clicks
-  const handleMenuClick = (e: any) => {
-    switch (e.key) {
-      case "UserProfile":
-        navigate("profile");
-        break;
-      case "Restaurants":
-        navigate("restaurants/list");
-        break;
-      case "Logout":
-        canLogout && navigate("/login");
-        break;
-    }
-  };
+  const handleMenuClick = useCallback(
+    (e: any) => {
+      switch (e.key) {
+        case "UserProfile":
+          navigate("profile");
+          break;
+        case "Restaurants":
+          navigate("restaurants/list");
+          break;
+        case "Logout":
+          canLogout && navigate("/login");
+          break;
+      }
+    },
+    [canLogout, navigate]
+  );
 
   // Define menu items for the sidebar
   const menuItems = [

@@ -1,0 +1,19 @@
+.admin-layout {
+  height: calc(100vh - 1px);
+}
+
+.app-header {
+  color: lightgrey;
+  font-weight: bold;
+  font-size: x-large;
+  font-variant: small-caps;
+  user-select: none;
+}
+
+.copy-right {
+  text-align: center;
+  margin: 0;
+  padding: 8px;
+  font-size: 12px;
+  color: #666;
+}

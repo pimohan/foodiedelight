@@ -1,0 +1,10 @@
+@import "styles/AdminLayout.css";
+@import "styles/Scrollbar.css";
+@import "styles/Content.css";
+@import "styles/Table.css";
+@import "styles/LoginLayout.css";
+@import "styles/Tabs.css";
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+{
+"users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "password1",
+      "email": "admin@thinkbridge.in",
+      "name": "User One"
+    },
+    {
+      "id": "2",
+      "username": "guest",
+      "password": "password2",
+      "email": "user2@thinkbridge.in",
+      "name": "User Two"
+    }
+  ]
+}

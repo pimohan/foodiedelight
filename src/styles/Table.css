@@ -1,0 +1,4 @@
+.column-action-group * {
+  margin-right: 8px;
+  cursor: pointer;
+}

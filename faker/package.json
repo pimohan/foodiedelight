@@ -1,0 +1,19 @@
+{
+  "name": "faker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "faker": "node index.js",
+    "start": "json-server -w db.json -p 5001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}

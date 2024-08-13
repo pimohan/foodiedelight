@@ -1,0 +1,32 @@
+.ant-tabs-content-holder {
+  overflow-y: auto;
+  height: calc(100vh - 350px);
+}
+
+.tab-content {
+  height: 430px;
+}
+
+.tab-1-btn-group {
+  text-align: center;
+}
+
+/* Media query for small screens (mobile) */
+@media (max-width: 576px) {
+  .tab-1-btn-group {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+  }
+
+  .copy-right {
+    display: none;
+  }
+
+  .operating-form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

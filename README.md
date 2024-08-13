@@ -93,12 +93,7 @@ yarn test
 Code Coverage
 To generate the code coverage report:
 
-sh
-Copy code
-npm test -- --coverage
-# or
-yarn test --coverage
----------------------------
+
 
 # Login
 ![image](https://github.com/user-attachments/assets/d3e80bed-9c3a-4602-beb7-c5675fe574c5)

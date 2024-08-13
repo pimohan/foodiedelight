@@ -83,18 +83,6 @@ The application should now be running at `http://localhost:3000`
     
 The application should now be running at `http://localhost:5001`.
 -----------------------
-### Running Tests
-
-To run the test suite, execute the following command:
-```sh
-npm test
-# or
-yarn test
-Code Coverage
-To generate the code coverage report:
-
-
-
 # Login
 ![image](https://github.com/user-attachments/assets/d3e80bed-9c3a-4602-beb7-c5675fe574c5)
 
@@ -110,4 +98,17 @@ To generate the code coverage report:
 ![image](https://github.com/user-attachments/assets/e9600ece-2bf9-4109-a8b8-19607cbef160)
 ![image](https://github.com/user-attachments/assets/348d7c31-d56b-40f7-91f9-d599a7ffb0b1)
 ![image](https://github.com/user-attachments/assets/43b41a39-46ba-46fe-80b7-46d3f4fc7685)
+
+
+### Running Tests
+
+To run the test suite, execute the following command:
+```sh
+npm test
+# or
+yarn test
+Code Coverage
+To generate the code coverage report:
+
+
 

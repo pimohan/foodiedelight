@@ -83,6 +83,7 @@ The application should now be running at `http://localhost:3000`
     
 The application should now be running at `http://localhost:5001`.
 -----------------------
+### Screenshots of FoodieDelight Application
 # Login
 ![image](https://github.com/user-attachments/assets/d3e80bed-9c3a-4602-beb7-c5675fe574c5)
 

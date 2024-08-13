@@ -42,7 +42,7 @@ export const RestaurantForm = ({ formMode }: FormSharedProps) => {
         console.log(result?.data);
       })();
     }
-  }, [formMode, restaurantId, form, setSelectedRestaurant]);
+  }, [formMode, restaurantId, form, setSelectedRestaurant, restaurantService]);
 
   const onWebsiteChange = (value: string) => {
     // Update autocomplete options based on website input

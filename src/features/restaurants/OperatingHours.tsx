@@ -19,7 +19,6 @@ import { useEffect } from "react";
 import { FormMode } from "../../types/Types";
 import { ActionButtonGroup } from "./ActionButtonGroup";
 import { useRestaurants } from "../../contexts/RestaurantsContext";
-import { className } from "./../../../node_modules/react-scripts/node_modules/@sinonjs/commons/types/index.d";
 
 // Define the OperatingHours component for managing restaurant operating hours
 export const OperatingHours = ({ formMode }: FormSharedProps) => {

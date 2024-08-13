@@ -62,13 +62,13 @@ const RestaurantsList = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [currentPage, pageSize, searchText]);
+  }, [currentPage, pageSize, searchText, fetchData]);
 
   useEffect(() => {
     if (reload) {
       fetchData(currentPage, pageSize);
     }
-  }, [reload]);
+  }, [reload, fetchData, currentPage, pageSize]);
 
   return (
     <div>

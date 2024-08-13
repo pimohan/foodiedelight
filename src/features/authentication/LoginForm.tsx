@@ -2,7 +2,6 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import type { FormProps } from "antd";
 import { Button, Checkbox, Flex, Form, Input, Card } from "antd";
-import { className } from "./../../../node_modules/react-scripts/node_modules/@sinonjs/commons/types/index.d";
 
 // Define the type for form fields
 type FieldType = {

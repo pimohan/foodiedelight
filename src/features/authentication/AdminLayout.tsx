@@ -60,7 +60,7 @@ export const AdminLayout = () => {
   // Redirect to Restaurants page on initial mount
   useEffect(() => {
     handleMenuClick({ key: "Restaurants" });
-  }, []);
+  }, [handleMenuClick]);
 
   return (
     <ConfigProvider theme={{ algorithm: theme.defaultAlgorithm }}>

@@ -66,9 +66,11 @@ The application should now be running at `http://localhost:3000`
     git clone https://github.com/pimohan/foodiedelight.git
     cd foodiedelight
     cd faker
-    ```
+    
     # or
     cd foodiedelight\faker
+
+    ```
 2. Install dependencies
     ```sh
     npm install

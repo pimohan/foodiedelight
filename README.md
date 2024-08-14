@@ -67,6 +67,8 @@ The application should now be running at `http://localhost:3000`
     cd foodiedelight
     cd faker
     ```
+    # or
+    cd .. faker
 2. Install dependencies
     ```sh
     npm install

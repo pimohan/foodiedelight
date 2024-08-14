@@ -25,7 +25,7 @@ Copy code
 - **Routing**: React Router
 - **UI Components**: Ant Design
 - **Testing**: Jest and React Testing Library
-- **Styling**: CSS-in-JS (styled-components)
+- **Styling**: Ant Design, CSS
 - **Code Coverage Tool**: Jest
 
 ## Getting Started

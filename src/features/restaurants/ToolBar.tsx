@@ -60,13 +60,15 @@ export const ToolBar = ({ parentRoute }: ToolBarProps) => {
           />
         )}
         {/* Button to navigate to the "Add Restaurant" page */}
-        <Button
-          type="primary"
-          icon={<DownloadOutlined />}
-          onClick={handleAddClick}
-        >
-          Add Restaurant
-        </Button>
+        {parentRoute === null && (
+          <Button
+            type="primary"
+            icon={<DownloadOutlined />}
+            onClick={handleAddClick}
+          >
+            Add Restaurant
+          </Button>
+        )}
       </Flex>
     </div>
   );

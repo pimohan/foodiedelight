@@ -577,13 +577,13 @@
         "website": "https://slushy-jump.name/"
       },
       "operating_hours": {
-        "monday": "9:00 AM - 9:00 PM",
-        "tuesday": "9:00 AM - 9:00 PM",
-        "wednesday": "9:00 AM - 9:00 PM",
-        "thursday": "9:00 AM - 9:00 PM",
-        "friday": "9:00 AM - 11:00 PM",
+        "monday": "09:00 AM - 09:00 PM",
+        "tuesday": "09:00 AM - 09:00 PM",
+        "wednesday": "09:00 AM - 09:00 PM",
+        "thursday": "09:00 AM - 09:00 PM",
+        "friday": "09:00 AM - 11:00 PM",
         "saturday": "10:00 AM - 11:00 PM",
-        "sunday": "10:00 AM - 8:00 PM"
+        "sunday": "10:00 AM - 08:06 PM"
       },
       "menu": [
         {
@@ -803,13 +803,13 @@
         "website": "https://far-off-domain.net/"
       },
       "operating_hours": {
-        "monday": "9:00 AM - 9:00 PM",
-        "tuesday": "9:00 AM - 9:00 PM",
-        "wednesday": "9:00 AM - 9:00 PM",
-        "thursday": "9:00 AM - 9:00 PM",
-        "friday": "9:00 AM - 11:00 PM",
+        "monday": "09:00 AM - 09:00 PM",
+        "tuesday": "09:00 AM - 09:00 PM",
+        "wednesday": "09:00 AM - 09:00 PM",
+        "thursday": "09:00 AM - 09:00 PM",
+        "friday": "09:00 AM - 11:00 PM",
         "saturday": "10:00 AM - 11:00 PM",
-        "sunday": "10:00 AM - 8:00 PM"
+        "sunday": "10:00 AM - 08:00 PM"
       },
       "menu": [
         {

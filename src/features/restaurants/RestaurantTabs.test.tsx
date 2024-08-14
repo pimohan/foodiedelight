@@ -38,14 +38,6 @@ describe("RestaurantTabs Component", () => {
 
   test("renders correctly and displays Toolbar and Tabs", () => {
     render(<RestaurantTabs formMode={FormMode.Add} />);
-
-    // Check if the ToolBar component is rendered
-    // expect(screen.getByText("ToolBar")).toBeInTheDocument();
-
-    // Check if the Tabs component is rendered with correct items
-    // expect(screen.getByText("RestaurantForm")).toBeInTheDocument();
-    // expect(screen.getByText("OperatingHours")).toBeInTheDocument();
-    // expect(screen.getByText("MenuList")).toBeInTheDocument();
   });
 
   test("handles tab change correctly", () => {

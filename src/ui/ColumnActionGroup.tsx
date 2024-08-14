@@ -1,33 +1,3 @@
-// import { useNavigate } from "react-router-dom";
-// import { Popconfirm } from "antd";
-// import { EditTwoTone, DeleteTwoTone } from "@ant-design/icons";
-// import axios from "axios";
-
-// interface ColumnActionGroupProps {
-//   record: any; // Represents the record for which actions are provided
-// }
-
-// export const ColumnActionGroup = ({ record }: ColumnActionGroupProps) => {
-//   const navigate = useNavigate();
-
-//   // Function to handle the deletion of a record
-//   const handleDelete = async () => {
-//     await axios.delete(`http://localhost:5001/restaurants/${record.id}`);
-//   };
-
-//   return (
-//     <div className="column-action-group">
-//       <EditTwoTone
-//         title="Edit"
-//         onClick={() => navigate(`/admin/restaurants/${record.id}/edit`)} // Navigate to the edit page
-//       />
-
-//       <Popconfirm title="Sure to delete?" onConfirm={() => handleDelete()}>
-//         <DeleteTwoTone title="Delete" />
-//       </Popconfirm>
-//     </div>
-//   );
-// };
 import { EditTwoTone, DeleteTwoTone } from "@ant-design/icons";
 import { Popconfirm } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -43,7 +13,6 @@ export const ColumnActionGroup = ({ record }: ColumnActionGroupProps) => {
 
   // Function to handle the deletion of a record
   const handleDelete = async () => {
-    // await axios.delete(`http://localhost:5001/restaurants/${record.id}`);
     await restaurantService?.deleteRestaurant(record.id);
     setReload(true);
   };

@@ -21,7 +21,6 @@ export const AdminLayout = () => {
     token: { colorBgContainer, borderRadiusLG, colorTextHeading }, // Extract theme tokens
   } = theme.useToken();
 
-  // Handle menu item clicks
   const handleMenuClick = useCallback(
     (e: any) => {
       switch (e.key) {
@@ -64,7 +63,7 @@ export const AdminLayout = () => {
   // Redirect to Restaurants page on initial mount
   useEffect(() => {
     handleMenuClick({ key: "Restaurants" });
-  }, [handleMenuClick]);
+  }, []);
 
   return (
     <ConfigProvider theme={{ algorithm: theme.defaultAlgorithm }}>

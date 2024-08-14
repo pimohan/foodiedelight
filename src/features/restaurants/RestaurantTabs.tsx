@@ -41,7 +41,6 @@ const RestaurantTabs = ({ formMode }: FormSharedProps) => {
 
   // Handle tab change event
   const onChange = (key: string) => {
-    console.log(key); // Log the active tab key (for debugging purposes)
     setActiveTabKey(key); // Update the active tab key in context
   };
 

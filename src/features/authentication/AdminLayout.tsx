@@ -63,6 +63,7 @@ export const AdminLayout = () => {
   // Redirect to Restaurants page on initial mount
   useEffect(() => {
     handleMenuClick({ key: "Restaurants" });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
